@@ -3,66 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Stack Demo</title>
+    <title>Matteo Marino</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">reactbits</div>
-            <div class="nav">
-                <button class="search-btn">Search Docs</button>
-                <button class="github-btn">Star on GitHub</button>
-            </div>
-        </header>
-        
-        <div class="sidebar">
-            <ul class="menu">
-                <li>Pixel Card</li>
-                <li>Circular Gallery</li>
-                <li>Carousel</li>
-                <li>Spotlight Card</li>
-                <li>Flying Posters</li>
-                <li class="active">Card Swap <span class="new-tag">New</span></li>
-                <li>Infinite Scroll</li>
-                <li>Glass Icons</li>
-                <li>Decay Card</li>
-                <li>Flowing Menu</li>
-                <li>Elastic Slider</li>
-            </ul>
-            
-            <h3>Backgrounds</h3>
-            <ul class="menu">
-                <li>Silk <span class="new-tag">New</span></li>
-                <li>Aurora</li>
-            </ul>
+    <!-- Header Hero -->
+    <header class="header">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title"></h1>
+            <p class="hero-subtitle">Creo esperienze web uniche e innovative</p>
+            <a href="#portfolio" class="cta-button">Scopri i miei progetti</a>
         </div>
-        
-        <main class="content">
-            <div class="card-demo">
-                <div class="card-stack">
-                    <div class="card card-front">
-                        <div class="card-header">
-                            <span class="tag">Customizable</span>
-                            <span class="tag">Reliable</span>
-                            <span class="tag">Smooth</span>
-                        </div>
-                        <div class="card-number">1</div>
+        <div class="scroll-indicator"></div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <h2 class="section-title">I Miei Progetti</h2>
+        <div class="projects-grid">
+            <!-- Progetto 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="QDA.jpg">
+                  </div>
+                  
+                <h3 class="project-title">Quellidellalba.com</h3>
+                <p class="project-description">
+                    Una piattaforma di e-commerce completa con design responsive, 
+                    sistema di pagamento integrato e dashboard amministrativa.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="#" class="project-link">Codice</a>
+                </div>
+            </div>
+
+            <!-- Progetto 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="DND.jpg">
+                  </div>
+                <h3 class="project-title"></h3>
+                <p class="project-description">
+                    Applicazione mobile cross-platform per la gestione di progetti 
+                    con sincronizzazione cloud e notifiche push.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">TypeScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">App Store</a>
+                    <a href="#" class="project-link">Play Store</a>
+                </div>
+            </div>
+
+            <!-- Progetto 3 -->
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <h3 class="project-title">Dashboard Analytics</h3>
+                <p class="project-description">
+                    Dashboard interattiva per l'analisi dei dati con grafici dinamici, 
+                    filtri avanzati e export personalizzati.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Demo</a>
+                    <a href="#" class="project-link">Documentazione</a>
+                </div>
+            </div>
+
+            <!-- Progetto 4 -->
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <h3 class="project-title">SaaS Platform</h3>
+                <p class="project-description">
+                    Piattaforma SaaS completa per la gestione aziendale con 
+                    multi-tenancy, billing automatico e API RESTful.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Prova Gratuita</a>
+                    <a href="#" class="project-link">API Docs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="section-title">Le Mie Competenze</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <div class="skill-name">React</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
                     </div>
-                    <div class="card card-back"></div>
                 </div>
-                
-                <div class="card-text">
-                    <h1>Card stacks have never looked so good</h1>
-                    <p>Just look at it go!</p>
+                <div class="skill-card">
+                    <div class="skill-icon">🟢</div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <div class="skill-name">Mobile</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">Database</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <div class="skill-name">Cloud</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="customize-section">
-                <h2>Customize</h2>
-                <!-- Customize controls would go here -->
-            </div>
-        </main>
-    </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">💼</a>
+            <a href="#" class="social-link" title="GitHub">🐱</a>
+            <a href="#" class="social-link" title="Email">📧</a>
+            <a href="#" class="social-link" title="Portfolio">🌐</a>
+        </div>
+        <p>&copy; matteomarino.cloud  2025 . Tutti i diritti riservati.</p>
+        <p>web by Matteo Marino</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
