@@ -487,5 +487,272 @@ body {
     transform: scale(1.2) rotate(360deg);
 }
 
- 
+ /* ==============================================
+   COOKIE POLICY SECTION
+   ============================================== */
+.cookie-policy-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.cookie-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cookie-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cookie-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.cookie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.cookie-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.cookie-card p, .cookie-card ul {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.cookie-card ul {
+    padding-left: 2rem;
+}
+
+.cookie-card li {
+    margin-bottom: 0.5rem;
+}
+
+.browser-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.browser-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.browser-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cookie-container {
+        padding: 2rem;
+    }
+    
+    .cookie-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-policy-section {
+        padding: 3rem 1rem;
+    }
+    
+    .cookie-container {
+        padding: 1.5rem;
+    }
+    
+    .cookie-card {
+        padding: 1rem;
+    }
+    
+    .cookie-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .browser-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .browser-links a {
+        width: 100%;
+        text-align: center;
+    }
+}
+ /* ==============================================
+   fine COOKIE POLICY SECTION
+   ============================================== */
+/* ==============================================
+   LEGAL LINKS STYLES
+   ============================================== */
+   .legal-links {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.legal-link {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.legal-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+
+.legal-link:hover {
+    color: #764ba2;
+}
+
+.legal-link:hover::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .legal-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+/* ==============================================
+   COOKIE CONSENT BUTTON
+   ============================================== */
+   .cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.cookie-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cookie-button:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Animazione pulsante */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cookie-button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+.cookie-button::after {
+    content: 'Cookie Policy';
+    position: absolute;
+    left: 60px;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.cookie-button:hover::after {
+    opacity: 1;
+}
+/* ==============================================
+   FOOTER COPYRIGHT STYLES
+   ============================================== */
+   .footer-copyright {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-copyright .highlight {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.signature {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+}
